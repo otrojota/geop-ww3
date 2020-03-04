@@ -1,0 +1,221 @@
+{
+    "webServer":{
+        "http":{"port":8187}
+    },
+    "limites":{
+        "w":-130.0, "e":-20.0,
+        "s":-75.0, "n":30.0
+    },
+    "dataPath":"/Volumes/JSamsung/geoportal/ww3/data",
+    "dataPath_bak":"/home/data",
+    "nDescargasParalelo":10,
+    "publishPath":"/Volumes/JSamsung/geoportal/ww3/publish",
+    "publishPath_bak":"/home/publish",
+    "variablesPorBanda":{
+        "WIND":[{
+            "codigo":"WIND_SPEED",
+            "unidad":"m/s",
+            "nombre":"Viento Superficial (océano) - Velocidad",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["meteorologia"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "decimales":2
+        }],
+        "WDIR":[{
+            "codigo":"WIND_DIRECTION",
+            "unidad":"º",
+            "nombre":"Viento Superficial (océano) - Vector",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["meteorologia"],
+            "icono":"img/variables/direccion-viento.svg",
+            "decimales":2
+        }],
+        "UGRD":[{
+            "codigo":"WIND_UGRD",
+            "unidad":"m/s",
+            "nombre":"Viento Superficial (océano) - Componente U",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["meteorologia"],
+            "icono":"img/variables/direccion-viento.svg",
+            "decimales":2
+        }],
+        "VGRD":[{
+            "codigo":"WIND_VGRD",
+            "unidad":"m/s",
+            "nombre":"Viento Superficial (océano) - Componente V",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["meteorologia"],
+            "icono":"img/variables/direccion-viento.svg",
+            "decimales":2
+        }],
+        "HTSGW":[{
+            "codigo":"OLAS_ALT_COMB",
+            "unidad":"m",
+            "nombre":"Olas Combinadas - Altura",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/altura-olas.svg",
+            "decimales":2
+        }],
+        "PERPW":[{
+            "codigo":"OLAS_MEAN_PER_PRIM",
+            "unidad":"seg",
+            "nombre":"Olas Primarias - Período Medio",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/periodo-olas.svg",
+            "decimales":2
+        }],
+        "DIRPW":[{
+            "codigo":"OLAS_DIR_PRIM",
+            "unidad":"º",
+            "nombre":"Olas Primarias - Vector",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/direccion-olas.svg",
+            "decimales":2
+        }],
+        "WVHGT":[{
+            "codigo":"OLAS_ALT_WIND",
+            "unidad":"m",
+            "nombre":"Olas Viento - Altura",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/altura-olas.svg",
+            "decimales":2
+        }],
+        "WVPER":[{
+            "codigo":"OLAS_MEAN_PER_WIND",
+            "unidad":"seg",
+            "nombre":"Olas Viento - Período Medio",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/periodo-olas.svg",
+            "decimales":2
+        }],
+        "WVDIR":[{
+            "codigo":"OLAS_DIR_WIND",
+            "unidad":"º",
+            "nombre":"Olas Viento - Vector",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/direccion-olas.svg",
+            "decimales":2
+        }],
+        "SWELL":[{
+            "codigo":"OLAS_ALT_SWELL1",
+            "unidad":"m",
+            "nombre":"Olas - Altura Olas Swell 1",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-RESERVED(241)",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/altura-olas.svg",
+            "decimales":2
+        }, {
+            "codigo":"OLAS_ALT_SWELL2",
+            "unidad":"m",
+            "nombre":"Olas - Altura Olas Swell 2",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"2-RESERVED(241)",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/altura-olas.svg",
+            "decimales":2
+        }],
+        "SWPER":[{
+            "codigo":"OLAS_MEAN_PER_SWELL1",
+            "unidad":"seg",
+            "nombre":"Olas - Período Medio Olas Swell 1",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-RESERVED(241)",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/periodo-olas.svg",
+            "decimales":2
+        }, {
+            "codigo":"OLAS_MEAN_PER_SWELL2",
+            "unidad":"seg",
+            "nombre":"Olas - Período Medio Olas Swell 2",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"2-RESERVED(241)",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/periodo-olas.svg",
+            "decimales":2
+        }],
+        "SWDIR":[{
+            "codigo":"OLAS_DIR_SWELL1",
+            "unidad":"º",
+            "nombre":"Olas - Dirección Olas Swell 1",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"1-RESERVED(241)",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/direccion-olas.svg",
+            "decimales":2
+        }, {
+            "codigo":"OLAS_DIR_SWELL2",
+            "unidad":"º",
+            "nombre":"Olas - Dirección Olas Swell 2",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"2-RESERVED(241)",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["oceanografia"],
+            "icono":"img/variables/direccion-olas.svg",
+            "decimales":2
+        }]
+    }
+}

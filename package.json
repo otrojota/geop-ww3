@@ -1,0 +1,32 @@
+{
+  "name": "geop-ww3",
+  "version": "1.0.0",
+  "description": "Geoportal NOAA WW3 provider",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otrojota/geop-ww3.git"
+  },
+  "keywords": [
+    "Geoportal",
+    "noaa",
+    "ww3"
+  ],
+  "author": "Jota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otrojota/geop-ww3/issues"
+  },
+  "homepage": "https://github.com/otrojota/geop-ww3#readme",
+  "dependencies": {
+    "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
+    "moment-timezone": "^0.5.28",
+    "pngjs": "^3.4.0"
+  }
+}
