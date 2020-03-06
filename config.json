@@ -36,7 +36,13 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/direccion-viento.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+                }
+            }
         }],
         "UGRD":[{
             "codigo":"WIND_UGRD",
@@ -101,7 +107,13 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Rojo"}
+                }
+            }
         }],
         "WVHGT":[{
             "codigo":"OLAS_ALT_WIND",
@@ -140,12 +152,18 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+                }
+            }
         }],
         "SWELL":[{
             "codigo":"OLAS_ALT_SWELL1",
             "unidad":"m",
-            "nombre":"Olas - Altura Olas Swell 1",
+            "nombre":"Olas Swell 1 - Altura",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-RESERVED(241)",
@@ -157,7 +175,7 @@
         }, {
             "codigo":"OLAS_ALT_SWELL2",
             "unidad":"m",
-            "nombre":"Olas - Altura Olas Swell 2",
+            "nombre":"Olas Swell 2 - Altura",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"2-RESERVED(241)",
@@ -170,7 +188,7 @@
         "SWPER":[{
             "codigo":"OLAS_MEAN_PER_SWELL1",
             "unidad":"seg",
-            "nombre":"Olas - Período Medio Olas Swell 1",
+            "nombre":"Olas Swell 1 - Período Medio",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-RESERVED(241)",
@@ -182,7 +200,7 @@
         }, {
             "codigo":"OLAS_MEAN_PER_SWELL2",
             "unidad":"seg",
-            "nombre":"Olas - Período Medio Olas Swell 2",
+            "nombre":"Olas Swell 2 - Período Medio",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"2-RESERVED(241)",
@@ -195,7 +213,7 @@
         "SWDIR":[{
             "codigo":"OLAS_DIR_SWELL1",
             "unidad":"º",
-            "nombre":"Olas - Dirección Olas Swell 1",
+            "nombre":"Olas Swell 1 - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-RESERVED(241)",
@@ -203,11 +221,17 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Azul"}
+                }
+            }
         }, {
             "codigo":"OLAS_DIR_SWELL2",
             "unidad":"º",
-            "nombre":"Olas - Dirección Olas Swell 2",
+            "nombre":"Olas Swell 2 - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"2-RESERVED(241)",
@@ -215,7 +239,13 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Verde"}
+                }
+            }
         }]
     }
 }
