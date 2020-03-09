@@ -126,7 +126,21 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/altura-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "vector":{"capaU":"WIND_UGRD", "capaV":"WIND_VGRD"},
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+                },
+                "isobandas":{
+                    "autoStep":true, 
+                    "escala":{"dinamica":true, "nombre":"rainbow - NASA OceanColor"}
+                },
+                "isolineas":{
+                    "autoStep":true, "lineWidth":1, "lineColor":"#000000"
+                }
+            }
         }],
         "WVPER":[{
             "codigo":"OLAS_MEAN_PER_WIND",
@@ -171,7 +185,21 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/altura-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "direccion":{"capa":"OLAS_DIR_SWELL1", "transformacion":"estandar-oceanografia"},
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+                },
+                "isobandas":{
+                    "autoStep":true, 
+                    "escala":{"dinamica":true, "nombre":"rainbow - NASA OceanColor"}
+                },
+                "isolineas":{
+                    "autoStep":true, "lineWidth":1, "lineColor":"#000000"
+                }
+            }
         }, {
             "codigo":"OLAS_ALT_SWELL2",
             "unidad":"m",
@@ -183,7 +211,21 @@
             }],
             "grupos":["oceanografia"],
             "icono":"img/variables/altura-olas.svg",
-            "decimales":2
+            "decimales":2,
+            "direccion":{"capa":"OLAS_DIR_SWELL2", "transformacion":"estandar-oceanografia"},
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+                },
+                "isobandas":{
+                    "autoStep":true, 
+                    "escala":{"dinamica":true, "nombre":"rainbow - NASA OceanColor"}
+                },
+                "isolineas":{
+                    "autoStep":true, "lineWidth":1, "lineColor":"#000000"
+                }
+            }
         }],
         "SWPER":[{
             "codigo":"OLAS_MEAN_PER_SWELL1",
