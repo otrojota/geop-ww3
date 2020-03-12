@@ -6,11 +6,11 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath":"/Volumes/JSamsung/geoportal/ww3/data",
-    "dataPath_bak":"/home/data",
+    "dataPath_bak":"/Volumes/JSamsung/geoportal/ww3/data",
+    "dataPath":"/home/data",
     "nDescargasParalelo":10,
-    "publishPath":"/Volumes/JSamsung/geoportal/ww3/publish",
-    "publishPath_bak":"/home/publish",
+    "publishPath_bak":"/Volumes/JSamsung/geoportal/ww3/publish",
+    "publishPath":"/home/publish",
     "variablesPorBanda":{
         "WIND":[{
             "codigo":"WIND_SPEED",
@@ -79,7 +79,7 @@
                 "gribShortName":"1-SFC",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/altura-olas.svg",
             "decimales":2
         }],
@@ -92,7 +92,7 @@
                 "gribShortName":"1-SFC",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/periodo-olas.svg",
             "decimales":2
         }],
@@ -105,7 +105,7 @@
                 "gribShortName":"1-SFC",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
             "decimales":2,
             "visualizadoresIniciales":{
@@ -124,7 +124,7 @@
                 "gribShortName":"1-SFC",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/altura-olas.svg",
             "decimales":2,
             "vector":{"capaU":"WIND_UGRD", "capaV":"WIND_VGRD"},
@@ -151,7 +151,7 @@
                 "gribShortName":"1-SFC",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/periodo-olas.svg",
             "decimales":2
         }],
@@ -164,7 +164,7 @@
                 "gribShortName":"1-SFC",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
             "decimales":2,
             "visualizadoresIniciales":{
@@ -183,7 +183,7 @@
                 "gribShortName":"1-RESERVED(241)",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/altura-olas.svg",
             "decimales":2,
             "direccion":{"capa":"OLAS_DIR_SWELL1", "transformacion":"estandar-oceanografia"},
@@ -209,7 +209,7 @@
                 "gribShortName":"2-RESERVED(241)",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/altura-olas.svg",
             "decimales":2,
             "direccion":{"capa":"OLAS_DIR_SWELL2", "transformacion":"estandar-oceanografia"},
@@ -236,7 +236,7 @@
                 "gribShortName":"1-RESERVED(241)",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/periodo-olas.svg",
             "decimales":2
         }, {
@@ -248,7 +248,7 @@
                 "gribShortName":"2-RESERVED(241)",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/periodo-olas.svg",
             "decimales":2
         }],
@@ -261,7 +261,7 @@
                 "gribShortName":"1-RESERVED(241)",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
             "decimales":2,
             "visualizadoresIniciales":{
@@ -279,7 +279,7 @@
                 "gribShortName":"2-RESERVED(241)",
                 "descripcion":"Superficial"
             }],
-            "grupos":["oceanografia"],
+            "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
             "decimales":2,
             "visualizadoresIniciales":{
