@@ -6,11 +6,11 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath_bak":"/Volumes/JSamsung/geoportal/ww3/data",
-    "dataPath":"/home/data",
+    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/ww3/data",
+    "dataPath_bak":"/home/data",
     "nDescargasParalelo":10,
-    "publishPath_bak":"/Volumes/JSamsung/geoportal/ww3/publish",
-    "publishPath":"/home/publish",
+    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/ww3/publish",
+    "publishPath_bak":"/home/publish",
     "variablesPorBanda":{
         "WIND":[{
             "codigo":"WIND_SPEED",
