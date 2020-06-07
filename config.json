@@ -6,16 +6,16 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/ww3/data",
-    "dataPath":"/home/data",
+    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/ww3/data",
+    "dataPath_bak":"/home/data",
     "nDescargasParalelo":10,
-    "publishPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/ww3/publish",
-    "publishPath":"/home/publish",
+    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/ww3/publish",
+    "publishPath_bak":"/home/publish",
     "variablesPorBanda":{
         "WIND":[{
             "codigo":"WIND_SPEED",
             "unidad":"m/s",
-            "nombre":"Viento Superficial (océano) - Velocidad",
+            "nombre":"[WW3] Viento Superficial (océano) - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-SFC",
@@ -23,12 +23,23 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/velocidad-viento.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "vectores":{
+                    "resolucion":30, 
+                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+                },
+                "particulas":{
+                    "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
+                    "nParticulas":300,
+                    "velocidad":0.7
+                }
+            }
         }],
         "WDIR":[{
             "codigo":"WIND_DIRECTION",
             "unidad":"º",
-            "nombre":"Viento Superficial (océano) - Vector",
+            "nombre":"[WW3] Viento Superficial (océano) - Dirección",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-SFC",
@@ -36,18 +47,12 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/direccion-viento.svg",
-            "decimales":2,
-            "visualizadoresIniciales":{
-                "vectores":{
-                    "resolucion":30, 
-                    "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
-                }
-            }
+            "decimales":2
         }],
         "UGRD":[{
             "codigo":"WIND_UGRD",
             "unidad":"m/s",
-            "nombre":"Viento Superficial (océano) - Componente U",
+            "nombre":"[WW3] Viento Superficial (océano) - Componente U",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-SFC",
@@ -60,7 +65,7 @@
         "VGRD":[{
             "codigo":"WIND_VGRD",
             "unidad":"m/s",
-            "nombre":"Viento Superficial (océano) - Componente V",
+            "nombre":"[WW3] Viento Superficial (océano) - Componente V",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-SFC",
@@ -86,7 +91,7 @@
         "PERPW":[{
             "codigo":"OLAS_MEAN_PER_PRIM",
             "unidad":"seg",
-            "nombre":"Olas Primarias - Período Medio",
+            "nombre":"Olas Primarias - Período Medio - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-SFC",
@@ -99,7 +104,7 @@
         "DIRPW":[{
             "codigo":"OLAS_DIR_PRIM",
             "unidad":"º",
-            "nombre":"Olas Primarias - Vector",
+            "nombre":"Olas Primarias - Dirección",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-SFC",
@@ -107,13 +112,7 @@
             }],
             "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2,
-            "visualizadoresIniciales":{
-                "vectores":{
-                    "resolucion":30, 
-                    "escala":{"dinamica":true, "nombre":"Color Fijo: Rojo"}
-                }
-            }
+            "decimales":2
         }],
         "WVHGT":[{
             "codigo":"OLAS_ALT_WIND",
@@ -177,7 +176,7 @@
         "SWELL":[{
             "codigo":"OLAS_ALT_SWELL1",
             "unidad":"m",
-            "nombre":"Olas Swell 1 - Altura",
+            "nombre":"Olas Swell 1 - Altura - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-RESERVED(241)",
@@ -203,7 +202,7 @@
         }, {
             "codigo":"OLAS_ALT_SWELL2",
             "unidad":"m",
-            "nombre":"Olas Swell 2 - Altura",
+            "nombre":"Olas Swell 2 - Altura - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"2-RESERVED(241)",
@@ -230,7 +229,7 @@
         "SWPER":[{
             "codigo":"OLAS_MEAN_PER_SWELL1",
             "unidad":"seg",
-            "nombre":"Olas Swell 1 - Período Medio",
+            "nombre":"Olas Swell 1 - Período Medio - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-RESERVED(241)",
@@ -242,7 +241,7 @@
         }, {
             "codigo":"OLAS_MEAN_PER_SWELL2",
             "unidad":"seg",
-            "nombre":"Olas Swell 2 - Período Medio",
+            "nombre":"Olas Swell 2 - Período Medio - Vector",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"2-RESERVED(241)",
@@ -255,7 +254,7 @@
         "SWDIR":[{
             "codigo":"OLAS_DIR_SWELL1",
             "unidad":"º",
-            "nombre":"Olas Swell 1 - Vector",
+            "nombre":"Olas Swell 1 - Dirección",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"1-RESERVED(241)",
@@ -263,17 +262,11 @@
             }],
             "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2,
-            "visualizadoresIniciales":{
-                "vectores":{
-                    "resolucion":30, 
-                    "escala":{"dinamica":true, "nombre":"Color Fijo: Azul"}
-                }
-            }
+            "decimales":2
         }, {
             "codigo":"OLAS_DIR_SWELL2",
             "unidad":"º",
-            "nombre":"Olas Swell 2 - Vector",
+            "nombre":"Olas Swell 2 - Dirección",
             "nivelInicial":0,
             "niveles":[{
                 "gribShortName":"2-RESERVED(241)",
@@ -281,13 +274,7 @@
             }],
             "grupos":["olas"],
             "icono":"img/variables/direccion-olas.svg",
-            "decimales":2,
-            "visualizadoresIniciales":{
-                "vectores":{
-                    "resolucion":30, 
-                    "escala":{"dinamica":true, "nombre":"Color Fijo: Verde"}
-                }
-            }
+            "decimales":2
         }]
     }
 }
