@@ -26,7 +26,7 @@
   "homepage": "https://github.com/otrojota/geop-ww3#readme",
   "dependencies": {
     "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
-    "moment-timezone": "^0.5.28",
+    "moment-timezone": "^0.5.35",
     "pngjs": "^3.4.0"
   }
 }
